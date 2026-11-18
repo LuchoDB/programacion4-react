@@ -4,9 +4,25 @@
     "target": "es2023",
     "lib": ["ES2023", "DOM"],
     "module": "esnext",
-    "types": ["vite/client"],
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "../node_modules/@types",
+      "../../ejercicios-basicos/node_modules/@types",
+      "../../ejercicios-basicos/node_modules"
+    ],
+    "types": ["vite/client"],
+    "paths": {
+      "*": [
+        "./node_modules/@types/*",
+        "./node_modules/*",
+        "../node_modules/@types/*",
+        "../node_modules/*",
+        "../../ejercicios-basicos/node_modules/@types/*",
+        "../../ejercicios-basicos/node_modules/*"
+      ]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
